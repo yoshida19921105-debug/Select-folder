@@ -1,0 +1,56 @@
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, 'Hiragino Sans', 'Noto Sans JP', sans-serif;
+  background: #f3f4f6;
+  color: #1f2937;
+}
+.app {
+  max-width: 480px;
+  margin: 40px auto;
+  padding: 24px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+}
+h1 { margin: 0 0 16px; font-size: 1.5rem; }
+button {
+  cursor: pointer;
+  border: 1px solid #d1d5db;
+  background: #fff;
+  border-radius: 6px;
+  padding: 6px 12px;
+  font: inherit;
+}
+button:disabled { opacity: 0.4; cursor: default; }
+.add { display: flex; gap: 8px; }
+.add input {
+  flex: 1;
+  padding: 8px 10px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font: inherit;
+}
+.add button { background: #2563eb; border-color: #2563eb; color: #fff; }
+.filters { display: flex; gap: 6px; margin: 16px 0 8px; }
+.filters .active { background: #1f2937; color: #fff; border-color: #1f2937; }
+.list { list-style: none; margin: 0; padding: 0; }
+.list li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 4px;
+  border-bottom: 1px solid #e5e7eb;
+}
+.list label { display: flex; align-items: center; gap: 10px; flex: 1; cursor: pointer; }
+.list .done span { text-decoration: line-through; color: #9ca3af; }
+.list .empty { justify-content: center; color: #9ca3af; border-bottom: none; }
+.delete { border: none; color: #ef4444; font-size: 1.2rem; padding: 0 8px; }
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 16px;
+  font-size: 0.9rem;
+  color: #6b7280;
+}

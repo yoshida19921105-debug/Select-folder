@@ -2,8 +2,21 @@
 
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
-## Repository state
+## Overview
 
-This repository is currently empty of code — it contains only `README.md`, a Japanese-language note explaining Claude Code's permission modes (Manual, Plan, Accept edits, Bypass permissions). There is no build system, package manifest, source code, or test suite yet, so there are no build/lint/test commands to run.
+A small React (Vite) ToDo list app. `README.md` is a separate Japanese-language note about Claude Code's permission modes.
 
-When code is added to this repository, update this file with the actual commands (build, lint, test, run a single test) and a description of the architecture — do not invent them ahead of time.
+## Commands
+
+- `npm install` — install dependencies
+- `npm run dev` — start the Vite dev server
+- `npm run build` — production build into `dist/`
+- `npm run preview` — serve the production build
+
+There is no linter or test suite yet.
+
+## Architecture
+
+- `index.html` → `src/main.jsx` mounts `<App />`.
+- `src/App.jsx` holds all state (`todos`, input text, filter). Todos are `{ id, title, done }` and persisted to `localStorage` under the key `todos`.
+- `src/index.css` contains all styling.
