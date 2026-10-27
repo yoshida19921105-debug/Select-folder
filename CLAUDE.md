@@ -1,5 +1,10 @@
 # CLAUDE.md
 
+私は[していること]をしている。目的は[出したいもの]。
+結論から書く。1文は短く。AIっぽい言い回しは使わない。
+
+ファイルを消す前と、上書きする前は、必ず私に確認する。このフォルダの外は触らない。
+
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
 ## Repository state
