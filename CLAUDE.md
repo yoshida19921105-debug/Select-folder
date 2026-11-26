@@ -4,6 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Repository state
 
-This repository is currently empty of code — it contains only `README.md`, a Japanese-language note explaining Claude Code's permission modes (Manual, Plan, Accept edits, Bypass permissions). There is no build system, package manifest, source code, or test suite yet, so there are no build/lint/test commands to run.
+- `README.md`: a Japanese-language note explaining Claude Code's permission modes (Manual, Plan, Accept edits, Bypass permissions).
+- `index.html`: a single static, self-contained page (inline CSS, no JS, no dependencies) — the bonus page for the "ミリオンnoter爆誕ライブ おきるママ with シロウ" event. Sections are marked by HTML comments (INTRO, MAP, CH1–CH5, HOMEWORK, THANK YOU). Screenshot spots are `.shot` placeholders to be replaced with `<img>`, and the LINE button's `href="#"` is a TODO.
 
-When code is added to this repository, update this file with the actual commands (build, lint, test, run a single test) and a description of the architecture — do not invent them ahead of time.
+There is no build system, package manifest, or test suite. To preview, open `index.html` in a browser (or `python3 -m http.server`). Update this file with real build/lint/test commands if any are added.

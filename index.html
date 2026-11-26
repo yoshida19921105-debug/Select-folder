@@ -1,0 +1,595 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>ミリオンnoter爆誕ライブ 特典｜おきるママ</title>
+<style>
+:root{
+  --bg:#fff8f3; --card:#ffffff; --ink:#3a2a2a; --sub:#7a6666; --line:#f0ddd2;
+  --accent:#e8553d; --accent2:#ff8a5b; --soft:#ffe9df; --memo:#fff3c9; --dark:#3a2323;
+}
+@media (prefers-color-scheme: dark){
+  :root{--bg:#1d1514; --card:#2a1f1d; --ink:#f6ece8; --sub:#b9a5a0; --line:#432f2b;
+    --accent:#ff7a5c; --accent2:#ff9a73; --soft:#3a2622; --memo:#4a3f1c; --dark:#120c0b;}
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);
+  font-family:"Hiragino Sans","Noto Sans JP","Yu Gothic",system-ui,sans-serif;
+  line-height:1.9;font-size:16px;-webkit-text-size-adjust:100%}
+.wrap{max-width:720px;margin:0 auto;padding:0 16px}
+section{padding:48px 0;border-bottom:1px dashed var(--line)}
+h1,h2,h3,h4{line-height:1.5;margin:0 0 .6em}
+h1{font-size:1.7rem}
+h2{font-size:1.5rem}
+h3{font-size:1.2rem;margin-top:2em}
+h4{font-size:1.05rem;margin-top:1.4em}
+p{margin:0 0 1em}
+.label{display:inline-block;font-size:.75rem;letter-spacing:.15em;font-weight:700;
+  color:var(--accent);margin-bottom:.6em}
+.ch{display:block;font-size:.8rem;letter-spacing:.15em;color:var(--accent);font-weight:700}
+.sub{color:var(--sub)}
+.hero{background:linear-gradient(160deg,var(--accent),var(--accent2));color:#fff;
+  padding:56px 0;text-align:center}
+.hero .tag{font-size:.8rem;letter-spacing:.2em;opacity:.9}
+.hero h1{margin:.4em 0}
+.hero .lead{background:#fff;color:var(--accent);display:inline-block;padding:.3em 1em;
+  border-radius:99px;font-weight:700;margin-top:1em;font-size:1rem}
+.hero ul{list-style:none;padding:0;margin:1.5em 0 0;display:flex;gap:8px;justify-content:center;flex-wrap:wrap}
+.hero li{background:rgba(255,255,255,.2);padding:.3em 1em;border-radius:99px;font-weight:700}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:20px;margin:16px 0}
+.memo{background:var(--memo);border-radius:12px;padding:16px 18px;margin:20px 0}
+.memo b{display:block;font-size:.75rem;letter-spacing:.15em;margin-bottom:.3em}
+.voice{background:var(--soft);border-radius:16px;padding:20px;margin:16px 0}
+.voice p{margin:0 0 .5em;font-weight:700}
+.big{display:grid;grid-template-columns:1fr;gap:12px;margin:20px 0}
+.stat{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px;text-align:center}
+.stat .n{font-size:2.2rem;font-weight:800;color:var(--accent);line-height:1.2}
+.stat .d{font-weight:700}
+.stat .s{font-size:.75rem;color:var(--sub);margin-top:.4em;line-height:1.6}
+.pill{font-weight:800;font-size:1.15rem;text-align:center;margin:1.5em 0}
+.flow{display:flex;flex-direction:column;align-items:center;gap:6px;margin:16px 0}
+.flow .box{width:100%;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px 16px;text-align:center}
+.flow .box b{display:block}
+.flow .arrow{color:var(--accent);font-size:.9rem}
+.row2{display:grid;grid-template-columns:1fr;gap:12px}
+@media(min-width:600px){.big{grid-template-columns:repeat(3,1fr)}.row2{grid-template-columns:1fr 1fr}}
+.row2 .card{margin:0}
+.row2 .bad{border-color:#d9a;}
+ol.steps,ul.pts{padding-left:0;list-style:none;margin:16px 0}
+ol.steps{counter-reset:s}
+ol.steps li,ul.pts li{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 16px 14px 16px;margin-bottom:10px}
+ol.steps li{counter-increment:s}
+ol.steps li::before{content:counter(s);display:inline-flex;align-items:center;justify-content:center;
+  width:1.7em;height:1.7em;border-radius:50%;background:var(--accent);color:#fff;font-weight:800;margin-right:.6em}
+.li-t{font-weight:700}
+.li-d{display:block;color:var(--sub);font-size:.93rem;margin-top:.3em}
+table{width:100%;border-collapse:collapse;font-size:.88rem;background:var(--card);border-radius:12px;overflow:hidden;margin:16px 0}
+th,td{border:1px solid var(--line);padding:10px;text-align:left;vertical-align:top;line-height:1.6}
+th{background:var(--soft)}
+.tablewrap{overflow-x:auto}
+.tablewrap table{min-width:520px}
+figure{margin:20px 0}
+.shot{border:2px dashed var(--line);border-radius:12px;background:var(--soft);color:var(--sub);
+  min-height:160px;display:flex;align-items:center;justify-content:center;text-align:center;
+  padding:16px;font-size:.85rem}
+.shot img{max-width:100%;border-radius:8px;display:block}
+figcaption{font-size:.88rem;color:var(--sub);margin-top:.6em}
+.kw{display:grid;grid-template-columns:1fr auto 1fr auto 1fr;gap:6px;align-items:center;text-align:center;
+  background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px;margin:10px 0;font-size:.9rem}
+.kw small{display:block;color:var(--accent);font-size:.7rem}
+.kw .res{font-weight:800}
+.ladder{display:grid;gap:10px;margin:16px 0}
+.ladder div{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px 16px}
+.ladder b{color:var(--accent);font-size:1.3rem;margin-right:.5em}
+.temp{display:grid;gap:8px;margin:16px 0}
+.temp div{background:var(--card);border:1px solid var(--line);border-left:6px solid var(--accent);border-radius:8px;padding:10px 14px}
+.temp div:nth-child(2){border-left-color:#ee6a4a}.temp div:nth-child(3){border-left-color:#f08a50}
+.temp div:nth-child(4){border-left-color:#f3a858}.temp div:nth-child(5){border-left-color:#f6c860}
+.emph{font-size:1.2rem;font-weight:800;line-height:1.7;margin:1.4em 0}
+.emph .hl{background:linear-gradient(transparent 60%,var(--memo) 60%)}
+.dark{background:var(--dark);color:#fff;border-bottom:none}
+.dark .label,.dark .ch{color:var(--accent2)}
+.btn{display:block;text-align:center;background:var(--accent);color:#fff;text-decoration:none;
+  font-weight:800;padding:16px;border-radius:99px;margin:20px 0;font-size:1.05rem}
+.profile{display:flex;gap:14px;align-items:flex-start}
+.avatar{flex:none;width:64px;height:64px;border-radius:50%;background:var(--accent);color:#fff;
+  display:flex;align-items:center;justify-content:center;font-weight:800}
+footer{padding:36px 0 60px;font-size:.78rem;color:var(--sub);text-align:center;line-height:1.8}
+nav.toc{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:16px 20px;margin:24px 0}
+nav.toc a{color:var(--ink);text-decoration:none;display:block;padding:4px 0}
+nav.toc a:hover{color:var(--accent)}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="tag">ミリオンnoter爆誕ライブ おきるママ with シロウ ／ LIVE BONUS</div>
+    <h1>noteは、3つの顔で<br>使い分けると売上になる‼️</h1>
+    <div class="lead">おきるママのnoteの使い方</div>
+    <ul><li>無料note</li><li>非公開note</li><li>有料note</li></ul>
+  </div>
+</header>
+
+<main class="wrap">
+
+<nav class="toc" aria-label="目次">
+  <b>もくじ</b>
+  <a href="#intro">INTRO ／ はじめに</a>
+  <a href="#map">MAP ／ 全体の地図</a>
+  <a href="#ch1">CH1 ／ noteって、今からじゃ遅い？</a>
+  <a href="#ch2">CH2 ／ 無料で書いても、流れて終わり？</a>
+  <a href="#ch3">CH3 ／ noteには3つの顔がある</a>
+  <a href="#ch4">CH4 ／ noteからSNSへの導線</a>
+  <a href="#ch5">CH5 ／ BANされても売上が止まらなかった理由</a>
+  <a href="#homework">HOMEWORK ／ 今日からの宿題</a>
+</nav>
+
+<!-- INTRO -->
+<section id="intro">
+  <span class="label">INTRO</span>
+  <h2>おきるママ</h2>
+  <p>対談来てくれて本当にありがとうございました❤️‍🔥 おきるママです。</p>
+  <p>当日はシロウくんと、noteの売り方・書き方・ファン化の話をしました。これはその復習用の特典です。</p>
+  <p>先に言っとくと、わたしはnoteで人生が変わった側の人間です。初めて出したnoteは2ヶ月で1000部。おきるママを立ち上げて最初のローンチ（note販売）は、売上2,000万円になりました。</p>
+  <p>でもね、これは文章がうまかったからじゃない。高卒、人脈ゼロ、ワンオペで2児を育てる元・社畜ママ。副業の波には手を出しては挫折してきた側です。</p>
+  <p class="emph"><span class="hl">うまくいったのは、noteの使い方を間違えなかったから。</span>今日はそれをぜんぶ置いていきます。</p>
+</section>
+
+<!-- MAP -->
+<section id="map">
+  <span class="label">MAP</span>
+  <h2>先に、全体の地図を見せるね</h2>
+  <div class="card">
+    <b>OKIRU NOTE MAP</b>
+    <div class="row2" style="margin-top:12px">
+      <div class="card"><b>Threads</b><br>SNSでわたしを知った人</div>
+      <div class="card"><b>無料note</b><br>noteの中で見つけてくれた人</div>
+    </div>
+    <div class="flow">
+      <div class="arrow">▼</div>
+      <div class="box"><b>LINE・オプチャ</b>つながってくれた人</div>
+      <div class="arrow">▼</div>
+      <div class="box"><b>非公開note</b>つながってくれた人だけに届くお手紙</div>
+      <div class="arrow">▼</div>
+      <div class="box"><b>有料note</b>一歩踏み出す人へ、遠回りしない権利</div>
+    </div>
+  </div>
+  <p>入口は2つ。SNSと、noteの中。どっちから来た人も、LINE・オプチャに集まって、非公開noteで温まって、有料noteへ。この地図を頭に置いて、続きを読んでね。</p>
+
+  <div class="voice">
+    <span class="label">YOUR VOICE</span>
+    <h3 style="margin-top:0">noteって、今からじゃもう遅くない？</h3>
+    <p>無料で書いても、どうせ読まれずに流れていくんでしょ？</p>
+    <p>有料noteなんて、わたしが出しても誰も買わないよ。</p>
+    <p style="font-weight:400;margin:.8em 0 0">うん、わかる。全部わかる🥺 だから、ひとつずつ正面から答えていくね。</p>
+  </div>
+</section>
+
+<!-- CH1 -->
+<section id="ch1">
+  <span class="ch">CH 1</span>
+  <h2>noteって、今からじゃ遅い？</h2>
+  <p class="sub">答えは、note公式の数字が出してくれてます</p>
+
+  <span class="label">CH1｜NUMBERS</span>
+  <p>遅くない。むしろ今がいちばん人がいる。これ、わたしの感想じゃなくて、note公式が出してる数字です。</p>
+  <div class="big">
+    <div class="stat"><div class="n">1,313万人</div><div class="d">noteの会員数</div><div class="s">2026年8月末時点／note株式会社 2026年11月11日発表</div></div>
+    <div class="stat"><div class="n">438万人</div><div class="d">noteでコンテンツを買ったことがある人</div><div class="s">2025年3月末時点／note株式会社 2025年4月8日発表</div></div>
+    <div class="stat"><div class="n">170億円超</div><div class="d">1年間に読者からクリエイターへ支払われたお金</div><div class="s">2024年11月末時点／同上</div></div>
+  </div>
+  <p>見てほしいのは、会員数より下の2つ。noteには、お金を払って読む文化がもうできあがってる。</p>
+  <p class="emph"><span class="hl">買う文化を、ゼロから作らなくていい。</span><br>もう買う人がいる場所に、置くだけでいい。</p>
+
+  <span class="label">CH1｜IN NOTE</span>
+  <h3 style="margin-top:0">noteの中で見つけてもらう4つのポイント</h3>
+  <p>noteの中を歩いてる1,313万人は、わたしのSNSを見てない人がほとんど。おきるママのことなんて知らない。だから、知らない人に見つけてもらって、信じてもらう前提で作ります。</p>
+  <ol class="steps">
+    <li><span class="li-t">知らない人でも、この人の情報は信じられると思える記事にする</span>
+      <span class="li-d">誰が書いてるのか、何をやってきた人なのかを、最初のほうで見せる。わたしなら、ワンオペで2児を育てながら脱サラした、という立場と実績の数字</span></li>
+    <li><span class="li-t">サムネは、自分の世界観より、noteユーザーが見慣れたデザインに</span>
+      <span class="li-d">知らない人は、見慣れない雰囲気のサムネを押さない。noteでよく見る形に寄せて、まず押してもらう</span></li>
+    <li><span class="li-t">テーマは、検索から人が来るものを選ぶ</span>
+      <span class="li-d">悩んでる人が実際に検索する言葉から、テーマを決める。キーワードに立場や手法を掛け合わせて探す。書きたいことからは決めない</span></li>
+    <li><span class="li-t">SNSとLINEへの入口を置く</span>
+      <span class="li-d">見つけてもらって終わりにしない。読み終わった人が、SNSでも会えて、LINEにも来てくれる入口を置く</span></li>
+  </ol>
+
+  <figure><div class="shot" role="img" aria-label="画像: おきるママのnoteのプロフィール"><span>📷 おきるママのnoteのプロフィール<br>（画像を差し替えてください）</span></div>
+    <figcaption>わたしのnoteのプロフィール。何をやってきた人なのかを、数字で最初に見せてる。はじめて来た人が、この人の話なら聞いてみようと思えるように</figcaption></figure>
+  <figure><div class="shot" role="img" aria-label="画像: おきるママのnoteの記事一覧"><span>📷 おきるママのnoteの記事一覧<br>（画像を差し替えてください）</span></div>
+    <figcaption>わたしのnoteの記事一覧。サムネは、文字を大きく、何の記事かが一目でわかる形に。noteでよく見かける形に寄せてる</figcaption></figure>
+
+  <h4>ほかの人のマガジンにも入れてもらえる</h4>
+  <p>noteには、気に入った記事を自分のマガジンにまとめる機能がある。ほかの人のマガジンに入れてもらえると、その人のマガジンを読んでる人にも見つけてもらえる。</p>
+  <figure><div class="shot" role="img" aria-label="画像: ピックアップされています の表示"><span>📷 「ピックアップされています」の表示<br>（画像を差し替えてください）</span></div>
+    <figcaption>わたしの有料noteの下に出る「ピックアップされています」。1.2万件の記事が入ったマガジンにも入れてもらってる。わたしのSNSを知らない人とも、ここで出会える</figcaption></figure>
+
+  <h4>タイトルの付け方</h4>
+  <p>たとえば、わたしの無料noteのタイトルはこれ。</p>
+  <div class="card">
+    <span class="label">TITLE</span>
+    <div class="row2">
+      <div><span class="sub">悩んでる人が検索で打つ言葉</span><br><b>AI副業の始め方</b></div>
+      <div><span class="sub">誰が書いてるか</span><br><b>ワンオペ主婦でもAIで脱サラできたわたしが解説</b></div>
+    </div>
+  </div>
+  <p>検索される言葉を前に、自分の立場を後ろに。この順番にしておくと、検索から来た知らない人にも、何の記事で、誰が書いてるのかが一目で伝わる。</p>
+</section>
+
+<!-- CH2 -->
+<section id="ch2">
+  <span class="ch">CH 2</span>
+  <h2>無料で書いても、流れて終わり？</h2>
+  <p class="sub">ここ、SNSと一番ちがうところ</p>
+
+  <span class="label">CH2｜NUMBERS</span>
+  <p>逆です。SNSの投稿は、出した日がピークで流れていく。でもnoteは残る。</p>
+  <div class="big" style="grid-template-columns:1fr">
+    <div class="stat"><div class="n">約40%</div><div class="d">読まれた記事のうち、1年後も読まれ続けている割合</div><div class="s">2024年投稿の約1,700万件を追跡／note株式会社 2026年3月10日発表</div></div>
+    <div class="stat"><div class="n">64%</div><div class="d">公開から1年以上たった記事に来る人のうち、検索エンジンから来た人</div><div class="s">同上（note内の回遊16%・ダイレクト14%・SNS3%）</div></div>
+  </div>
+  <div class="row2">
+    <div class="card"><b>SNSの投稿</b><br>出した日がピーク<br>連れてくるのは今日の人<br>毎日出し続けないと止まる</div>
+    <div class="card"><b>note</b><br>1年後も読まれる<br>検索と回遊で明日の人も来る<br>書いた記事が貯まっていく</div>
+  </div>
+  <p class="emph"><span class="hl">SNSは、今日の集客。<br>noteは、貯金の集客。</span></p>
+
+  <span class="label">CH2｜HOW TO</span>
+  <h3 style="margin-top:0">流れない記事にする3つのコツ</h3>
+  <ol class="steps">
+    <li><span class="li-t">1本に1テーマ</span><span class="li-d">あれもこれも詰め込むと、検索でも引っかからないし、読み終わった人も迷子になる。あふれた話は、別の記事か配信に回す</span></li>
+    <li><span class="li-t">書いて終わりにしない。追記して育てる</span><span class="li-d">わたしの有料noteは、出したあとも追記してます。新しいやり方が見つかったら足す。追記した日付も書く。同じ記事が、どんどん強くなる</span></li>
+    <li><span class="li-t">反応がよかったテーマは、何度でも使う</span><span class="li-d">飽きるのは書いてる本人だけ。読者のほとんどは、過去の投稿も記事も見てない。反応が落ちたのを数字で見てから、やめる</span></li>
+  </ol>
+
+  <span class="label">CH2｜FOLLOWERS</span>
+  <h3 style="margin-top:0">noteのフォロワーが増えると、どうなる？</h3>
+  <p>noteで新作を出すと、フォロワーさんにお知らせが届きます。noteでは、誰かをフォローすると、その人の新着記事を1日1回まとめてメールで知らせる設定が自動でオンになる。ベルのマークをオンにしてくれた人には、アプリにすぐ通知も届く。</p>
+  <div class="card">
+    <span class="label">HOW IT WORKS</span>
+    <div class="flow">
+      <div class="box"><b>新作noteを公開</b></div>
+      <div class="arrow">▼　　　▼</div>
+      <div class="row2" style="width:100%">
+        <div class="box"><b>まとめて通知</b>新着を1日1回メールで<br>フォローすると自動でオン</div>
+        <div class="box"><b>すぐに通知</b>ベルをオンにした人に<br>アプリで届く</div>
+      </div>
+      <div class="arrow">▼</div>
+      <div class="box"><b>フォロワー 6,040人</b>おきるママのnote（2026年11月25日時点）</div>
+    </div>
+  </div>
+  <p>つまり、フォロワーの数は、新作を出した日にお知らせが届く人の数。フォロワーが増えるほど、出した瞬間から読まれるnoteになる。noteの中に、もうひとつのリストを持ってるようなものです。</p>
+  <div class="memo"><b>OKIRU MEMO</b>ただし、お知らせを届けてくれるのはnote。noteのフォロワーも、最後は借り物。だからnoteからも、SNSとLINEに来てもらう入口を置いておく。</div>
+</section>
+
+<!-- CH3 -->
+<section id="ch3">
+  <span class="ch">CH 3</span>
+  <h2>おきるのnoteには、3つの顔がある</h2>
+  <p class="sub">今日いちばん持って帰ってほしいところ</p>
+
+  <span class="label">CH3｜OVERVIEW</span>
+  <p>わたしはnoteを1種類の道具だと思ってない。誰に読んでもらうかで、3つに分けてます。</p>
+  <span class="label">3 FACES</span>
+  <div class="ladder">
+    <div><b>無料note</b>はじめましての名刺<br><span class="sub">まだ知らない人へ</span></div>
+    <div><b>非公開note</b>ここだけの話のお手紙<br><span class="sub">もう知ってる人へ</span></div>
+    <div><b>有料note</b>遠回りしない権利<br><span class="sub">踏み出す人へ</span></div>
+  </div>
+  <div class="tablewrap"><table>
+    <tr><th></th><th>読む人</th><th>書き方</th><th>最後のお願い</th></tr>
+    <tr><th>無料note</th><td>noteの中で見つけてくれた、まだ知らない人</td><td>誰でもわかる言葉で</td><td>SNSのフォローとLINE</td></tr>
+    <tr><th>非公開note</th><td>LINE・オプチャでつながってくれた人</td><td>自分の言葉で</td><td>次の一歩をひとつ</td></tr>
+    <tr><th>有料note</th><td>一歩踏み出したい人</td><td>温度を段階的に上げる</td><td>購入者特典の受け取り</td></tr>
+  </table></div>
+
+  <!-- THEMES -->
+  <span class="label" style="margin-top:2em">CH3｜THEMES</span>
+  <h3 style="margin-top:0">noteのテーマの探し方</h3>
+  <p>まず大前提。テーマは生み出すんじゃなくて、拾うもの。書きたいことじゃなくて、読者が読みたいことを書く。需要がある場所に、それ私が書きます、と手を挙げるイメージです。</p>
+
+  <h4>わたしが需要を拾ってる5つの場所</h4>
+  <ol class="steps">
+    <li><span class="li-t">SNSのリプ欄をのぞく</span><span class="li-d">投稿そのものより、リプ欄。何が褒められてて、何に人が集まって、どんな質問が来てるかを見る</span></li>
+    <li><span class="li-t">本屋をのぞく</span><span class="li-d">売れてる本のタイトルと目次は、世の中の需要そのもの。棚に並ぶ言葉で、今の流れがわかる</span></li>
+    <li><span class="li-t">noteやBrainのランキングを見る</span><span class="li-d">上位の記事は、需要があるから売れてる。真似するんじゃなくて、自分ならどう切り取るかを考える</span></li>
+    <li><span class="li-t">直接聞く</span><span class="li-d">こんなnote書いたら読みたい？とSNSで聞いてみる。1人でも読みたい人がいるなら、出してみる</span></li>
+    <li><span class="li-t">日々のやりとりから見つける</span><span class="li-d">フォロワーさんからの、ちょっとした質問。自分のこんなところに興味を持ってくれるんだ、がテーマになる</span></li>
+  </ol>
+
+  <h4>キーワードリサーチは、キーワード×立場・手法で探す</h4>
+  <p>検索して需要を調べるときは、キーワードだけで調べない。キーワードに、立場や手法を掛け合わせて探す。キーワードだけだと広すぎて、誰が何を知りたいのかが見えてこない。立場（誰が）や手法（どうやって）を掛け合わせると、読者の姿と、その人に向けて書かれた記事が見えてくる。</p>
+  <span class="label">KEYWORD × POSITION / METHOD</span>
+  <div class="kw"><div><small>キーワード</small>副業</div><div>×</div><div><small>立場</small>主婦</div><div>＝</div><div class="res"><small>探す言葉</small>主婦 副業</div></div>
+  <div class="kw"><div><small>キーワード</small>副業</div><div>×</div><div><small>手法</small>AI</div><div>＝</div><div class="res"><small>探す言葉</small>AI 副業</div></div>
+  <div class="kw"><div><small>キーワード</small>Threads</div><div>×</div><div><small>手法</small>顔出しなし</div><div>＝</div><div class="res"><small>探す言葉</small>Threads 顔出しなし</div></div>
+  <p>掛け合わせた言葉をnoteやGoogleの検索窓に入れて、どんな記事が出てくるか、どんな言葉が一緒に候補に出てくるかを見る。その立場や手法で、自分の体験から書けるならテーマになる。</p>
+  <p>わたしの無料note「AI副業の始め方｜ワンオペ主婦でもAIで脱サラできたわたしが解説」も、副業というキーワードに、AI（手法）とワンオペ主婦（立場）を掛け合わせてできてます。</p>
+  <p class="sub">※検索ワードは例です</p>
+
+  <h4>見つけた需要は、自分の切り口に変える</h4>
+  <div class="card">
+    <span class="label">ANGLE</span>
+    <p><b>人気のジャンル</b><br><span class="sub">ランキングや本屋で見つけた需要</span></p>
+    <div class="row2">
+      <div><b>専門</b><br><span class="sub">得意なことに絞る</span></div>
+      <div><b>ターゲット</b><br><span class="sub">誰向けかを絞る</span></div>
+      <div><b>体験</b><br><span class="sub">自分がやった話</span></div>
+    </div>
+    <p class="pill" style="margin-bottom:0">▼<br>自分にしか書けないテーマ</p>
+  </div>
+
+  <h4>3つの顔ごとの、テーマの探し方</h4>
+  <span class="label">WHERE TO LOOK</span>
+  <div class="row2">
+    <div class="card"><b>無料note</b><br>検索される悩み<br>調べればわかる情報<br>ジャンルの外の話</div>
+    <div class="card"><b>非公開note</b><br>今みんなが悩んでること<br>今の市場の流れ</div>
+    <div class="card"><b>有料note</b><br>自分にしか語れない体験<br>有料noteの続き</div>
+  </div>
+  <div class="tablewrap"><table>
+    <tr><th></th><th>どこで探す</th><th>選ぶ基準</th></tr>
+    <tr><th>無料note</th><td>noteやBrainのランキング、本屋、検索される言葉</td><td>自分のターゲットの中で、おきるを知らない人が読みたくなるか。調べれば出てくる一般的な情報は、無料で出しやすい</td></tr>
+    <tr><th>非公開note</th><td>SNSのリプ欄、日々のやりとり、本屋の棚の変化</td><td>もう知ってくれてる人が、一歩踏み出すきっかけになるか。共感できる悩みか、今の市場の流れに合ってるか</td></tr>
+    <tr><th>有料note</th><td>直接聞く、リプ欄の質問、ランキング×自分の切り口</td><td>自分にしか語れない体験か。もう売ってる有料noteに関わる内容は、無料で出さずに有料に</td></tr>
+  </table></div>
+  <div class="memo"><b>OKIRU MEMO</b>体験談は有料にしやすい。調べればわかる情報は無料で出しやすい。迷ったら、この線で分けるとスッキリします。書くネタがない、は勘違い。ネタはさがそうと思わないと降ってこないだけ。</div>
+
+  <!-- FREE -->
+  <span class="label" style="margin-top:2.5em">CH3｜FREE</span>
+  <h3 style="margin-top:0">無料note＝はじめましての名刺</h3>
+  <p>無料noteは、noteの中で見つけてもらう場所。わたしのSNSを見てない人に、noteの検索やおすすめから見つけてもらうのが役割です。SNSから来た人に読ませるための記事じゃない。</p>
+  <div class="card">
+    <span class="label">ROLE</span>
+    <div class="row2">
+      <div class="box"><b>noteの検索</b><br><span class="sub">悩みの言葉で探してる人</span></div>
+      <div class="box"><b>noteの中の回遊</b><br><span class="sub">おすすめや関連記事から来た人</span></div>
+    </div>
+    <div class="flow">
+      <div class="arrow">▼　　　▼</div>
+      <div class="box"><b>無料note</b>この人の話、もっと聞きたい</div>
+      <div class="arrow">▼　　　▼</div>
+      <div class="row2" style="width:100%">
+        <div class="box"><b>SNSをフォロー</b>毎日会える関係に</div>
+        <div class="box"><b>LINEに登録</b>特典を受け取る</div>
+      </div>
+    </div>
+  </div>
+
+  <h4>テーマの選び方</h4>
+  <p>自分のターゲットの中で、おきるママを知らない人が読みたくなるテーマを選ぶ。わたしの無料noteを並べると、テーマは4種類あります。</p>
+  <div class="tablewrap"><table>
+    <tr><th>テーマの型</th><th>わたしの無料note</th><th>スキ</th></tr>
+    <tr><td>始め方ガイド</td><td>AI副業の始め方｜ワンオペ主婦でもAIで脱サラできたわたしが解説</td><td>26</td></tr>
+    <tr><td>全部書く</td><td>【有料級】ワンオペママがスマホ1台で脱サラした方法、全部書く</td><td>53</td></tr>
+    <tr><td>型の無料公開</td><td>【無料でスレッズ攻略】顔出しなしワンオペ主婦が15分でセミナー600席埋めた集客投稿の型</td><td>39</td></tr>
+    <tr><td>ジャンルの外</td><td>私はアイドルになりたい</td><td>412</td></tr>
+  </table></div>
+  <p class="sub">スキの数は2026年11月24日時点</p>
+  <p>いちばんスキが多いのは、副業の話じゃない「私はアイドルになりたい」。ジャンルの外の話は、おきるって人を好きになってくれる人を連れてくる。ノウハウの記事と、人を好きになってもらう記事、両方を持っておく。</p>
+
+  <h4>言葉は、誰でもわかるものを使う</h4>
+  <p>読むのは、わたしのことも、業界の言葉も知らない人。だから、専門用語や身内の言葉は使わない。使うなら、ひとことで意味を添える。はじめて読む人にも伝わるかを基準にする。</p>
+  <div class="row2">
+    <div class="card bad"><b>伝わらない</b><br>CVを上げる導線設計<br>フロントからバックへ<br>リスト化する</div>
+    <div class="card"><b>伝わる</b><br>買ってもらえる流れを作る<br>安い商品から、本命の商品へ<br>LINEに登録してもらう</div>
+  </div>
+
+  <h4>書き方の型</h4>
+  <p>わたしの無料noteは、だいたいこの順番で書いてます。</p>
+  <ol class="steps">
+    <li><span class="li-t">読者の悩みを、問いかけで始める</span><span class="li-d">副業したいのに、なんで続かないの？のように、読者の心の声をそのまま見出しにする</span></li>
+    <li><span class="li-t">誰が書いてるのかを見せる</span><span class="li-d">知らない人に信じてもらうために、立場と実績を先に出す。ただし等身大で。すごい人感を出すと、自分とは違う世界の人だと思って離れる</span></li>
+    <li><span class="li-t">結論を先に、中身は番号つきで</span><span class="li-d">結論：やったことはシンプル、から入って、1、2、3と番号つきの見出しで並べる。読み飛ばす人も迷子にならない</span></li>
+    <li><span class="li-t">出し惜しみしない</span><span class="li-d">タイトルに【有料級】【無料で〇〇】と付けるなら、本当にそのレベルを書く。ここで信じてもらえるかが決まる</span></li>
+    <li><span class="li-t">最後に、SNSとLINEの入口を置く</span><span class="li-d">ここまで読んでくれた人に、と呼びかけて、普段の発信の場所と、LINEで受け取れる特典を案内する</span></li>
+  </ol>
+  <h4>やらないこと</h4>
+  <ul class="pts">
+    <li>有料商品の売り込みは入れない。置くのは、SNSとLINEへの入口だけ</li>
+    <li>1本に2つ以上のテーマを詰め込まない</li>
+  </ul>
+
+  <!-- PRIVATE -->
+  <span class="label" style="margin-top:2.5em">CH3｜PRIVATE</span>
+  <h3 style="margin-top:0">非公開note＝ここだけの話のお手紙</h3>
+  <p>これ、意外と知られてない使い方。noteは公開せずに下書きのまま、共有用のリンクで読んでもらえる。わたしはこれを、LINEやオプチャでつながってくれた人への限定記事として配ってます。</p>
+  <span class="label">HOW TO</span>
+  <ol class="steps">
+    <li><span class="li-t">書く</span><span class="li-d">noteで書いて、公開しない</span></li>
+    <li><span class="li-t">名前をつける</span><span class="li-d">タイトルの頭に【LINE限定】など</span></li>
+    <li><span class="li-t">配る</span><span class="li-d">共有リンクをLINE・オプチャで</span></li>
+  </ol>
+  <p>タイトルの頭には【LINE限定】【オプチャ限定】【セミナー特典】みたいに、どこ向けかを付けてます。中身はLINEとオプチャで分けてない。同じ記事を両方に配ることもあります。</p>
+  <figure><div class="shot" role="img" aria-label="画像: 下書きのままの限定note"><span>📷 下書きのままの限定note（記事管理画面）<br>（画像を差し替えてください）</span></div>
+    <figcaption>わたしのnoteの記事管理画面。どれも下書きのまま。公開はしないで、共有リンクだけをLINEやオプチャで配ってる</figcaption></figure>
+
+  <h4>書くべきこと</h4>
+  <p>読むのは、もうおきるママを知ってくれてる人。だから、知ってもらうための話はいらない。一歩踏み出すきっかけになる話を書きます。</p>
+  <div class="row2">
+    <div class="card"><b>テーマの見つけ方</b><br><br><b>共感から探す</b><br>読んでくれる人が今まさに悩んでいること。わたしも通ってきた気持ち<br><br><b>市場のトレンドから探す</b><br>今なにが起きてて、今なら何をやるべきか</div>
+    <div class="card"><b>わたしが実際に書いてるネタ</b><ul style="padding-left:1.2em;margin:.5em 0 0">
+      <li>月ごとの売上と、その月の戦略の公開</li>
+      <li>セミナーやコンサルに行って学んだこと</li>
+      <li>来年の予想や、人前ではちょっと言いにくい本音</li>
+      <li>メルマガの課外授業。本文に書ききれない話を、限定noteに逃がす</li>
+      <li>購入者特典・セミナー特典</li></ul></div>
+  </div>
+
+  <h4>言葉は、自分の言葉で</h4>
+  <p>無料noteとは逆。非公開noteは、わたしを知ってくれてる人へのお手紙だから、きれいに整えなくていい。いつもの口ぐせ、いつもの言い回し、そのままで書く。この人の声が聞こえるって感じてもらえることが、一番の価値になる。</p>
+  <p>登録してくれた人だけが読める。この特別感が、ここにいてよかったを作る。だから公開noteと中身をかぶらせない。公開しちゃったら、限定の価値は消えるから。</p>
+  <div class="memo"><b>OKIRU MEMO</b>共有リンクは、受け取った人が転送したら誰でも読めます。本当に外に出したくない数字や、人の名前は書かない。あとで公開に切り替えるときは、配信の中に貼ったリンクも確認してね。</div>
+
+  <!-- PAID -->
+  <span class="label" style="margin-top:2.5em">CH3｜PAID</span>
+  <h3 style="margin-top:0">有料note＝遠回りしない権利</h3>
+  <p>わたしの有料noteは、100円から39,800円まで。100円は覗き見の入口、数千円は1テーマの解決、数万円は全部入りの教科書。価格で役割を分けてます。</p>
+  <span class="label">PRICE LADDER</span>
+  <div class="ladder">
+    <div><b>100円</b>覗き見の入口</div>
+    <div><b>数千円</b>1テーマの解決</div>
+    <div><b>数万円</b>全部入りの教科書</div>
+  </div>
+
+  <h4>売れるかどうかは、無料部分で決まる</h4>
+  <p>無料部分は、読者の気持ちの温度を、段階的に上げていく場所。わたしは読者の気持ちを5つの段階に分けて、この順番で書いてます。</p>
+  <span class="label">5 STEPS OF FEELING　読みはじめ → 購入（気持ちの温度 ▶）</span>
+  <div class="temp">
+    <div><b>① 共感したい</b><br>心の距離を縮める。等身大の自分と、読者の代弁から入る</div>
+    <div><b>② 納得したい</b><br>なんでその方法なの？という疑いを、先回りして解く</div>
+    <div><b>③ 自分にもできる？</b><br>ハードルを下げて、これならわたしにもできるかも、と思ってもらう</div>
+    <div><b>④ 諦めたくない</b><br>気持ちに寄り添って、もう一度やってみよう、の勇気を渡す</div>
+    <div><b>⑤ 決断したい</b><br>このnoteなら大丈夫、と安心して踏み出せるように背中を押す</div>
+  </div>
+
+  <h4>購入者特典は、つけたほうがいい</h4>
+  <p>特典はオマケじゃない。読んで終わりにさせないための仕掛け。実践を後押しするテンプレート、1枚で見られるまとめ集、慣れてきた人向けの限定の補足資料。金額が高いnoteには、期間限定の個別相談もおすすめです。</p>
+
+  <h4>価格の考え方</h4>
+  <ul class="pts">
+    <li>価格は、どの段階の読者に向けたnoteかで決める</li>
+    <li>高くするほど、無料部分の説得力と特典の設計が大事になる</li>
+    <li>安いnoteほど手を抜かない。初めてデジタルコンテンツを買う人にとっては、数千円でも思い切った買い物だから</li>
+    <li>最初は低めでいい。実績とレビューと信頼が積み上がってきたら、価格を上げていく</li>
+    <li>期間限定や先着の価格で、今買う理由をつくる</li>
+  </ul>
+
+  <h4>ファン化は、買ってもらったあとから始まる</h4>
+  <p>買ってくれた人のコメントには、全部返す。わたしの有料noteのコメント欄には、購入者さんとのやりとりが998件あります（2026年9月4日時点、わたしの返信も含む）。このコメント欄が、次に買う人の背中を押してくれる。</p>
+  <figure><div class="shot" role="img" aria-label="画像: 有料noteの購入者のコメント欄"><span>📷 YouTube攻略noteの購入者のコメント欄<br>（お名前とアイコンは隠した画像を差し替えてください）</span></div>
+    <figcaption>YouTube攻略noteの購入者のコメント欄。このnoteだけで649件（2026年11月25日時点）。お名前とアイコンは隠しています</figcaption></figure>
+
+  <span class="label" style="margin-top:2em">CH3｜ANSWER</span>
+  <h3 style="margin-top:0">でも、わたしなんかの記事に、お金を払う人いる？</h3>
+  <p>いる。いきなり有料を出すから怖いんよ。無料で名刺を渡して、非公開でお手紙を送って、温まった人にだけ有料を見せる。この順番なら、買う人はちゃんといます。</p>
+  <p class="emph"><span class="hl">有料noteで売ってるのは、情報じゃない。あなたが1年かけて転んだ道を、1日で歩ける地図。遠回りしない権利です。</span></p>
+</section>
+
+<!-- CH4 -->
+<section id="ch4">
+  <span class="ch">CH 4</span>
+  <h2>noteから、SNSへの導線</h2>
+  <p class="sub">noteで見つけてくれた人を、毎日会える関係に</p>
+
+  <span class="label">CH4｜WHY</span>
+  <p>noteの中で見つけてくれた人は、まだ1回会っただけの人。記事を読んで閉じたら、もう二度と会えないかもしれない。</p>
+  <p>だから、noteからSNSへの道を作っておく。SNSなら、毎日の投稿で何度も会える。何度も会ううちに、この人の話をもっと聞きたい、が育って、LINEに来てくれる。</p>
+  <span class="label">FLOW</span>
+  <div class="flow" style="flex-direction:row;flex-wrap:wrap;justify-content:center">
+    <div class="box" style="width:auto;flex:1"><b>無料note</b>1回会う</div><div class="arrow">▶</div>
+    <div class="box" style="width:auto;flex:1"><b>SNS</b>毎日会う</div><div class="arrow">▶</div>
+    <div class="box" style="width:auto;flex:1"><b>LINE</b>つながる</div>
+  </div>
+  <p class="emph"><span class="hl">1回会っただけの人を、<br>毎日会える人に変える。</span></p>
+
+  <span class="label">CH4｜WHERE</span>
+  <h3 style="margin-top:0">SNSへの入口を置く3つの場所</h3>
+  <ol class="steps">
+    <li><span class="li-t">プロフィール</span><span class="li-d">まず見に来る場所。記事を気に入った人は、まずプロフィールを見に来る。どのSNSで、何を発信してる人なのかを書いて、リンクを置いておく。</span></li>
+    <li><span class="li-t">本文の途中</span><span class="li-d">さらっとひとこと。話の流れで、この話はSNSでも毎日してます、とひとこと。押しつけずに、さらっと。リンクを貼るなら、話の区切りのところに1つだけ。</span></li>
+    <li><span class="li-t">記事の最後</span><span class="li-d">いちばん温まってる。読み終わって、いちばん気持ちが温まってるところ。SNSとLINEの入口を、何がもらえるかと一緒に置く。</span></li>
+  </ol>
+  <figure><div class="shot" role="img" aria-label="画像: noteのプロフィール"><span>📷 おきるママのnoteのプロフィール<br>（画像を差し替えてください）</span></div>
+    <figcaption>わたしのnoteのプロフィール。何をやってきた人かを書いて、いちばん下にXへのリンクを置いてる</figcaption></figure>
+  <figure><div class="shot" role="img" aria-label="画像: 無料noteの最後に置いているSNSの一覧"><span>📷 無料noteの最後に置いているSNSの一覧<br>（画像を差し替えてください）</span></div>
+    <figcaption>わたしの無料noteの最後。Threads、オプチャ、YouTube、X、Substack。どこで何を発信してるかを一言ずつ添えて、全部の入口を並べてる</figcaption></figure>
+
+  <span class="label">CH4｜RULES</span>
+  <h3 style="margin-top:0">入口の置き方のルール</h3>
+  <ol class="steps">
+    <li><span class="li-t">記事の最後のお願いは、ひとつに絞る</span><span class="li-d">SNSもLINEも有料noteも並べたら、人は何も選ばない。いちばん来てほしい場所を先に、もうひとつは添えるだけ</span></li>
+    <li><span class="li-t">何がもらえるかを1文そえる</span><span class="li-d">フォローしてね、だけで終わらせない。毎日どんな話をしてるのか、LINEで何が受け取れるのかを書く</span></li>
+    <li><span class="li-t">温度をそろえる</span><span class="li-d">はじめましての人に、いきなり商品を見せない。まずは会い続けられる場所へ</span></li>
+  </ol>
+  <h4>3つの顔ごとの、最後のお願い</h4>
+  <div class="tablewrap"><table>
+    <tr><th></th><th>最後のお願い</th><th>ねらい</th></tr>
+    <tr><th>無料note</th><td>SNSのフォローと、LINEで特典を受け取ってね</td><td>知らない人と、また会える関係をつくる</td></tr>
+    <tr><th>非公開note</th><td>セミナー・相談会・次の商品のどれか1つ</td><td>温まった人に、ちょうどいい次の段を見せる</td></tr>
+    <tr><th>有料note</th><td>購入者特典の受け取り場所へ</td><td>買ってくれた人を、LINEや会員ページに迎える</td></tr>
+  </table></div>
+  <div class="memo"><b>OKIRU MEMO</b>逆に、Threadsの投稿の中では、LINEという言葉は使わないようにしてます。プロフから受け取れます、みたいに言い換えてね。</div>
+</section>
+
+<!-- CH5 -->
+<section id="ch5">
+  <span class="ch">CH 5</span>
+  <h2>BANされても、売上が止まらなかった理由</h2>
+  <p class="sub">わたしの実話をひとつ</p>
+
+  <span class="label">CH5｜STORY</span>
+  <p>1億を売り上げたThreadsアカウントが、BANされました。Metaから、ある日いきなりクビです。</p>
+  <p>普通なら、ここで売上はゼロになる。でも、BANされた今も、毎日売上は立ってます。</p>
+  <p class="emph">理由はひとつ。<br><span class="hl">ひとつのSNSに、全部をあずけてなかったから。</span></p>
+
+  <span class="label">CH5｜LOOP</span>
+  <p>LINEとメルマガのリストがあった。そこに、配信でずっと関係を続けてきた人たちがいた。SNSが1つ消えても、人が回る道はほかに残ってたんよ。</p>
+  <h4>人がぐるっと回る輪</h4>
+  <span class="label">LOOP（右回りに一周）</span>
+  <div class="flow">
+    <div class="box"><b>入口</b>Threads ・ noteの検索</div><div class="arrow">▼</div>
+    <div class="box"><b>LINE</b></div><div class="arrow">▼</div>
+    <div class="box"><b>オプチャ／非公開note</b>一歩のきっかけ</div><div class="arrow">▼</div>
+    <div class="box"><b>有料note</b>遠回りしない権利</div><div class="arrow">▼</div>
+    <div class="box"><b>購入者の声</b>コメント欄</div><div class="arrow">↻ ぐるっと回る</div>
+  </div>
+  <h4>オプチャで、わたしがやってること</h4>
+  <ul class="pts">
+    <li>オプチャ限定の非公開noteのリンクを流す</li>
+    <li>ライブやセミナーは、先にオプチャで告知する。人数を集めてから本番に入る</li>
+  </ul>
+  <p>BANのあとに出し直したローンチは、ローンチ期間の売上が700万円。このとき売る前にやったのは、オプチャの人数を先に増やすこと。教育は配信の中で済ませてから売ること。売る前に、回る輪を先に作ってました。</p>
+</section>
+
+<!-- HOMEWORK -->
+<section id="homework">
+  <span class="label">HOMEWORK</span>
+  <h2>今日からの宿題、3つだけ</h2>
+  <ol class="steps">
+    <li><span class="li-t">自分のnoteに、顔をつける</span><span class="li-d">今あるnoteを、名刺・お手紙・遠回りしない権利の3つに仕分けてみる。顔がないnoteは、まず無料の名刺から</span></li>
+    <li><span class="li-t">noteにSNSへの入口を置く</span><span class="li-d">プロフィール、本文の途中、記事の最後。3つの場所に、SNSとLINEの入口があるか見直す</span></li>
+    <li><span class="li-t">お手紙を1通書く</span><span class="li-d">LINEかオプチャの人だけに読んでほしい話を、自分の言葉で、非公開noteに1本</span></li>
+  </ol>
+  <p>noteは、書いて終わりの場所じゃない。人がぐるっと回る輪の、ちょうど真ん中に置く道具です。</p>
+  <p class="emph"><span class="hl">いつかやろう、は一生来ない。変わるのは、今日やるに変えた瞬間から。</span></p>
+</section>
+
+</main>
+
+<!-- THANK YOU -->
+<section class="dark" id="thanks">
+  <div class="wrap">
+    <span class="label">THANK YOU</span>
+    <h2>自分の人生自分で歩めぃ‼️</h2>
+    <p>ここまで読んでくれたあなたに❤️‍🔥<br>
+    LINEに登録すると、3日間の特別動画が届きます。<br>
+    5大特典も受け取れます‼️</p>
+    <p><b>豪華5大無料特典プレゼント</b></p>
+    <!-- TODO: LINE登録URLに差し替え -->
+    <a class="btn" href="#" rel="noopener">LINEで5大特典を受け取る</a>
+
+    <div class="profile" style="margin-top:2em">
+      <div class="avatar" aria-hidden="true">おきる</div>
+      <div>
+        <span class="label">PROFILE</span><br>
+        <b>おきるママ</b>　<span style="opacity:.7">この特典を書いた人</span>
+        <p style="margin-top:.5em;opacity:.9">ワンオペで2児を育てる元・社畜ママ。Threadsを始めて2ヶ月で会社員の月収を超えて脱サラ。考えるのは自分、作業はAI。子育てしながら発信してます。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="wrap">
+  <p>このページは、シロウくん×おきるママ対談の参加者さま限定の特典です。<br>URLや内容の共有・転載はご遠慮ください。</p>
+  <p>ここに書いた売上や部数は、おきるママ個人の実績です。<br>同じ成果が出ることを約束するものではありません。</p>
+  <p>数字の出典（note株式会社のプレスリリース）：2026年11月11日／2025年4月8日／2026年3月10日<br>
+  通知の仕組み：noteヘルプ「すぐに通知」と「まとめて通知」について</p>
+  <p>OKIRU MAMA × SHIROU</p>
+</footer>
+
+</body>
+</html>
